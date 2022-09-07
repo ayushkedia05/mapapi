@@ -45,7 +45,7 @@ exports.getdetails = async (req, res, next) => {
     let readdata;
     readdata = await reading.find({
       location: {
-        $geoWithin: { $centerSphere: [[12.9302528, 77.6994816], dis / 6378.1] }
+        $geoWithin: { $centerSphere: [[lat, long], dis / 6378.1] }
       }
     });
 
