@@ -18,7 +18,6 @@ const readingbookSchema = new mongoose.Schema({
     type: {
       type: String, // Don't do `{ location: { type: String } }`
       default: 'Point',
-      enum: ['Point'], // 'location.type' must be 'Point'
     },
     coordinates: {
       type: [Number],

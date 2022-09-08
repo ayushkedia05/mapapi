@@ -4,5 +4,5 @@ const {readdetail,getdetails} =require('../controllers/readcontroller')
 const router=express.Router()
 
 router.post('/store',readdetail)
-router.post('/details',getdetails)
+router.get('/details',getdetails)
 module.exports = router;
